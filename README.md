@@ -13,3 +13,34 @@ Projeto da matéria de web- design
 - keyup Detecta quando uma tecla é liberada.
 - input Detecta alterações no valor de um campo durante a interação.
 - change
+
+
+
+
+
+o que precisa:
+===Laboratório de Java Script===
+Interface
+Funcionalidade
+Cabeça
+Menu
+Roda pé
+click
+mouseover
+keydown
+input
+submit
+getElementById()
+querySelector()
+querySelectorAll()
+style
+createElement()
+alert()
+confirm()	
+																	
+																	
+																	
+																	
+																	
+																	
+																	
