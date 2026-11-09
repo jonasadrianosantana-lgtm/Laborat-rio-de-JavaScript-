@@ -1,36 +1,155 @@
+:root {
+    --fundo: #eef2f7;
+    --tinta: #14213d;
+    --tinta-suave: #4a5568;
+    --card: #ffffff;
+    --borda: #d5dce6;
+    --destaque: #0f766e;
+    --destaque-escuro: #0b5a54;
+}
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    background: var(--fundo);
+    color: var(--tinta);
+    line-height: 1.5;
 }
 
-/* Navbar */
+/* barra do topo */
 .navabar {
-    background-color: #1e293b;
-    color: #fff;
-    padding: 16px 24px;
-    font-size: 18px;
-    font-weight: bold;
+    background: var(--tinta);
+    color: #ffffff;
+    padding: 14px 24px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
 
 h1 {
-    margin: 20px;
+    text-align: center;
+    margin: 32px 16px 8px;
+    font-size: 2rem;
 }
 
-/* Cards lado a lado */
+h3 {
+    font-size: 1rem;
+    margin: 16px 0 8px;
+}
+
+h3:first-child {
+    margin-top: 0;
+}
+
+/* grade de cards */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding: 0 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 24px auto 48px;
+    padding: 0 16px;
 }
 
-.container > div {
-    flex: 1 1 200px;
-    border: 1px solid #ccc;
+.card-1,
+.card-2,
+.card-3,
+.card-5,
+.card-6 {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-left: 5px solid var(--destaque);
     border-radius: 8px;
-    padding: 16px;
+    padding: 20px;
+}
+
+/* texto dentro dos cards */
+.container p {
+    margin: 10px 0;
+    padding: 6px 8px;
+    border-radius: 4px;
+    color: var(--tinta-suave);
+    transition: background-color 0.2s;
+}
+
+/* botões */
+button {
+    background: var(--destaque);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 14px;
+    margin: 4px 4px 4px 0;
+    font-size: 0.9rem;
+    font-family: inherit;
+}
+
+button:hover {
+    background: var(--destaque-escuro);
+}
+
+/* campos de texto */
+input[type="text"] {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+input[type="text"]:focus {
+    border-color: var(--destaque);
+}
+
+/* foco visível para teclado */
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 2px;
+}
+
+/* card-6: formulário e lista */
+#meuForm {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#meuForm button {
+    margin: 0;
+    white-space: nowrap;
+}
+
+#listaItens {
+    margin: 10px 0 0 20px;
+    color: var(--tinta-suave);
+}
+
+#listaItens li {
+    margin: 4px 0;
+}
+
+/* celular */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    #meuForm {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #meuForm button {
+        margin-top: 8px;
+    }
 }

@@ -40,13 +40,14 @@
         <div class="card-3">
 
             <h3>detector de tecla pressionada</h3>
-            <input type="text" placeholder="Digite algo..." id="inputText">
+            <input type="text" placeholder="Digite algo..." id="inputPressionada">
             <p id="keyPressed">Tecla pressionada:</p>
 
-             <h3>detector de tecla liberada</h3>
-            <input type="text" placeholder="Digite algo..." id="inputText">
+            <h3>detector de tecla liberada</h3>
+            <input type="text" placeholder="Digite algo..." id="inputLiberada">
             <p id="keyReleased">Tecla liberada:</p>
         </div>
+
         <div class="card-5">
 
             <h3>Change evento</h3>
@@ -54,6 +55,22 @@
             <p id="changeResultado">Texto alterado:</p>
         </div>
 
+        <div class="card-6">
+            <h3>Evento input (a cada tecla)</h3>
+            <input type="text" placeholder="Digite algo..." id="inputEvento">
+            <p id="inputResultado">Digitando:</p>
+
+            <h3>Evento submit</h3>
+            <form id="meuForm">
+                <input type="text" placeholder="Seu nome..." id="nomeForm" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="submitResultado"></p>
+
+            <h3>Criar elementos</h3>
+            <button id="btncriar">Criar item na lista</button>
+            <ul id="listaItens"></ul>
+        </div>
 
     </div>
 
