@@ -24,8 +24,6 @@ O nosso projeto referente à matéria de Web Design consiste em executar um labo
 
 #### O que precisa ser feito
 
-===Laboratório de Java Script===
-
 - Interface
 
 - Funcionalidade
