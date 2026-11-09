@@ -4,75 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>trabalho italo</title>
+    <title>Laboratório de JavaScript</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <section class="navabar">
-        Bem vindos ao laboratorio Java Script
-    </section>
-    <h1>Laboratorio Java Script</h1>
-    <div class="container">
-        <div class="card-1">
-            <p>
-                Ola, seja bem vindo ao lanoratorio Java Script!
-            </p>
+<body id="topo">
 
-            <button id="btnapagar">não leio texto(apagar texto)</button>
+    <header class="cabecalho">
+        <h1>Laboratório de JavaScript</h1>
+        <p>Bem-vindos ao laboratório de JavaScript!</p>
+    </header>
+    <!--aqui poderia ter 6 paginas e ir se movendo por elas, mas é mais trabalho então desisti-->
+    <nav class="menu">
+        <a href="#topo">Início</a>
+        <a href="#card-1">Cliques</a>
+        <a href="#card-2">Mouse</a>
+        <a href="#card-3">Teclado</a>
+        <a href="#card-5">Change</a>
+        <a href="#card-6">Input / Submit / DOM</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="card-1" id="card-1">
+            <h2>Eventos de clique</h2>
+            <p id="textoApagar">Olá, seja bem-vindo ao laboratório de JavaScript!</p>
+
+            <button id="btnapagar">Não leio texto (apagar texto)</button>
             <button id="btnrestaurar">Restaurar texto</button>
             <button id="btnjanela">Ver tamanho da janela</button>
             <p id="status" aria-live="polite"></p>
+        </section>
 
-        </div>
+        <section class="card-2" id="card-2">
+            <h2>Eventos de mouse</h2>
+            <button id="dblClick">Botão de clique duplo</button>
+            <button id="mouseOver">Botão de mouse over(altera o estilo css. semenlhante ao Hover)</button>
 
-
-        <div class="card-2">
-            <button id="dblClick">botão de clique duplo</button>
-            <button id="mouseOver">botão de mouse over</button>
-
-            <h3>detector da posição do mouse</h3>
-
+            <h3>Detector da posição do mouse</h3>
             <p id="mousePosition">Posição do mouse:</p>
+        </section>
 
-        </div>
+        <section class="card-3" id="card-3">
+            <h2>Eventos de teclado</h2>
 
-        <div class="card-3">
-
-            <h3>detector de tecla pressionada</h3>
+            <h3>Detector de tecla pressionada</h3>
             <input type="text" placeholder="Digite algo..." id="inputPressionada">
             <p id="keyPressed">Tecla pressionada:</p>
 
-            <h3>detector de tecla liberada</h3>
+            <h3>Detector de tecla liberada</h3>
             <input type="text" placeholder="Digite algo..." id="inputLiberada">
             <p id="keyReleased">Tecla liberada:</p>
-        </div>
+        </section>
 
-        <div class="card-5">
-
-            <h3>Change evento</h3>
-            <input type="text" placeholder="Digite algo..." id="changeinput">
+        <section class="card-5" id="card-5">
+            <h2>Evento change</h2>
+            <input type="text" placeholder="Digite algo e saia do campo..." id="changeinput">
             <p id="changeResultado">Texto alterado:</p>
-        </div>
+        </section>
 
-        <div class="card-6">
-            <h3>Evento input (a cada tecla)</h3>
+        <section class="card-6" id="card-6">
+            <h2>Evento input (a cada tecla)</h2>
             <input type="text" placeholder="Digite algo..." id="inputEvento">
             <p id="inputResultado">Digitando:</p>
 
-            <h3>Evento submit</h3>
+            <h2>Evento submit</h2>
             <form id="meuForm">
                 <input type="text" placeholder="Seu nome..." id="nomeForm" required>
                 <button type="submit">Enviar</button>
             </form>
             <p id="submitResultado"></p>
 
-            <h3>Criar elementos</h3>
+            <h2>Criar elementos</h2>
             <button id="btncriar">Criar item na lista</button>
             <ul id="listaItens"></ul>
-        </div>
+        </section>
 
-    </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Projeto da disciplina de Desenvolvimento Web — Prof. Ítalo Berg</p>
+        <p>Jonas Adriano Santana, Herros Henrique, Eduardo Nunes</p>
+        <p>&copy; 2025 Laboratório de JavaScript</p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
