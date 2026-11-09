@@ -17,6 +17,10 @@ O nosso projeto referente à matéria de Web Design consiste em executar um labo
 - keyup: Detecta quando uma tecla é liberada.
 - input: Detecta alterações no valor de um campo durante a interação.
 - change
+- cabeçalho
+-rodapé
+- funcionalidade
+- menu(a parte de navegação(inicio, cliques, mouse, teclado))
 
 #### O que precisa ser feito
 
