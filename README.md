@@ -22,6 +22,7 @@ O nosso projeto referente à matéria de Web Design consiste em executar um labo
 - funcionalidade
 - menu(a parte de navegação(inicio, cliques, mouse, teclado))
 
+=============================================================================
 #### O que precisa ser feito
 
 - Interface
