@@ -78,6 +78,7 @@ body {
     padding: 22px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
     border: 2px solid #2a5298;
+    border-top-color: #e67e22;
     transition: transform .2s, box-shadow .2s;
     scroll-margin-top: 80px;
 }
@@ -86,8 +87,6 @@ body {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
 }
-
-.container{ border-top-color: #e67e22; }
 
 .container h2 {
     font-size: 1.15rem;

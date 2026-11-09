@@ -1,60 +1,35 @@
-# Laborat-rio-de-JavaScript-
-Projeto da matéria de web- design
+# Laboratório de JavaScript
 
-O nosso projeto referente à matéria de Web Design consiste em executar um laboratório de JavaScript com os elementos aprendidos em aula, sob a orientação do professor Ítalo Berg Marques Souza dos Reis. Nosso grupo é composto por três integrantes:
-• Jonas Adriano Santana
-• Herros Henrique
-• Eduardo Nunes
+Projeto desenvolvido para a disciplina de Desenvolvimento Web, com exemplos interativos de eventos e manipulação do DOM usando JavaScript.
 
-#### O que já foi feito até agora?
+## Integrantes
 
-- click: Detecta um clique em um elemento.
-- dblclick: Detecta um clique duplo.
-- mouseover: Detecta quando o ponteiro do mouse entra sobre um elemento.
-- mouseout: Detecta quando o ponteiro do mouse sai de um elemento.
-- mousemove: Detecta a movimentação do mouse.
-- keydown: Detecta quando uma tecla é pressionada.
-- keyup: Detecta quando uma tecla é liberada.
-- input: Detecta alterações no valor de um campo durante a interação.
-- change
-- cabeçalho
--rodapé
-- funcionalidade
-- menu(a parte de navegação(inicio, cliques, mouse, teclado))
+- Jonas Adriano Santana
+- Herros Henrique
+- Eduardo Nunes
 
-=============================================================================
-#### O que precisa ser feito
+## Funcionalidades
 
-- Interface
+- **Cliques:** apagar um texto com confirmação, restaurá-lo e exibir as dimensões da janela.
+- **Mouse:** detectar clique duplo, alterar o estilo de um botão ao passar o ponteiro e acompanhar a posição do mouse.
+- **Teclado:** mostrar as teclas pressionadas e liberadas.
+- **Campos de texto:** demonstrar os eventos `change` e `input`.
+- **Formulário:** capturar o envio, validar o nome e exibir o resultado sem recarregar a página.
+- **Manipulação do DOM:** criar itens na lista dinamicamente.
+- **Navegação:** menu com atalhos para as seções da página.
 
-- Funcionalidade
+O projeto também demonstra o uso de `getElementById()`, `querySelector()`, `querySelectorAll()`, `createElement()`, estilos via JavaScript, `alert()` e `confirm()`.
 
-- Cabeça
+## Como executar
 
-- Menu
+Abra o arquivo `index.html` em um navegador. Não é necessário instalar dependências.
 
-- Roda pé
+## Arquivos
 
-- click
+- `index.html` — estrutura e conteúdo da página.
+- `style.css` — estilos e layout responsivo.
+- `app.js` — eventos e interações em JavaScript.
 
-- mouseover
+## Créditos
 
-- keydown
-
-- input
-
-- submit
-
-- getElementById()
-
-- querySelector()
-
-- querySelectorAll()
-
-- style
-
-- createElement()
-
-- alert()
-
-- confirm()
+Projeto da disciplina de Desenvolvimento Web, sob orientação do professor Ítalo Berg Marques Souza dos Reis.
